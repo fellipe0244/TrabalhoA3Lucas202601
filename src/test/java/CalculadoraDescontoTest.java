@@ -1,8 +1,4 @@
-package src.test.java;
 
-import src.main.java.CalculadoraDesconto;
-import src.main.java.DescontoFixo;
-import src.main.java.DescontoPercentual;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
