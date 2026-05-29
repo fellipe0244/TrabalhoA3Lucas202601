@@ -23,6 +23,23 @@ DIP (Dependency Inversion Principle): O serviço de checkout depende da abstraç
 
 Padrão de Projeto Utilizado Strategy (Comportamental): Utilizado para alternar dinamicamente o algoritmo de cálculo de desconto (Fixo ou Percentual) baseado no tipo de cupom fornecido em tempo de execução.
 
+## Instruções para Execução da Aplicação
+
+Este projeto foi desenvolvido utilizando o padrão de gerenciamento de dependências do **Maven** e o **Java 23 (OpenJDK)**. Siga os passos abaixo para clonar, compilar e rodar os testes da aplicação em sua máquina local.
+
+### Pré-requisitos
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+* **Java JDK 23** ou superior.
+* **Apache Maven 3.9.x** ou superior.
+* Variável de ambiente `JAVA_HOME` configurada apontando para a raiz do seu JDK (sem a pasta `\bin` no final).
+
+### Passo a Passo
+
+ **Clonar o Repositório:**
+   Abra o seu terminal e execute o comando abaixo para clonar o projeto:
+```bash
+   git clone [https://github.com/fellipe0244/TrabalhoA3Lucas202601.git](https://github.com/fellipe0244/TrabalhoA3Lucas202601.git)
+
 ## Modelagem da Solução (Diagrama de Classes)
 
 ```mermaid
@@ -46,3 +63,4 @@ classDiagram
     RegraDesconto <|.. DescontoFixo : Implementa
     RegraDesconto <|.. DescontoPercentual : Implementa
     CalculadoraDesconto --> RegraDesconto : Depende de (DIP)
+
