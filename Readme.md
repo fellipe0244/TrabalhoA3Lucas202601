@@ -63,3 +63,28 @@ classDiagram
     RegraDesconto <|.. DescontoPercentual : Implementa
     CalculadoraDesconto --> RegraDesconto : Depende de (DIP)
 
+```
+## Demonstração de Funcionamento (Logs da Aplicação)
+
+Como a solução desenvolvida é um componente de back-end focado em regras de negócio acopláveis (Microsserviço de Cupons), o seu comportamento, regras de validação e execução prática são demonstrados por meio da suíte de testes automatizados. 
+
+Ao executar o comando `mvn test`, a aplicação valida os seguintes cenários de negócio em tempo de execução:
+
+1. **Cenário 1 (`deveAplicarDescontoFixoCorretamente`):** Valida se um cupom de valor fixo (ex: R$ 20,00) reduz corretamente o saldo total de uma compra de R$ 100,00, retornando o valor esperado de R$ 80,00.
+2. **Cenário 2 (`deveGarantirQueDescontoFixoNaoDeixeValorNegativo`):** Regra de segurança que garante que se um cupom de R$ 50,00 for aplicado em uma compra de R$ 10,00, o sistema barra valores negativos e fixa o total do carrinho em R$ 0,00.
+3. **Cenário 3 (`deveAplicarDescontoPercentualCorretamente`):** Valida a estratégia de porcentagem (ex: 10%), aplicando-a sobre uma compra de R$ 200,00 e garantindo o retorno correto de R$ 180,00.
+
+### Log de Execução Sucesso (Saída do Console):
+
+```text
+[INFO] --- surefire:3.1.2:test (default-test) @ engenharia-software-ecommerce ---
+[INFO] Running CalculadoraDescontoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s -- in CalculadoraDescontoTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
