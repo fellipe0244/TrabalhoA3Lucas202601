@@ -37,7 +37,6 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
  **Clonar o Repositório:**
    Abra o seu terminal e execute o comando abaixo para clonar o projeto:
-```bash
    git clone [https://github.com/fellipe0244/TrabalhoA3Lucas202601.git](https://github.com/fellipe0244/TrabalhoA3Lucas202601.git)
 
 ## Modelagem da Solução (Diagrama de Classes)
