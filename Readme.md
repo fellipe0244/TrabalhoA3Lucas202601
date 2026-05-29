@@ -22,3 +22,27 @@ OCP (Open/Closed Principle): A introdução de novos tipos de cupons (ex: Frete 
 DIP (Dependency Inversion Principle): O serviço de checkout depende da abstração (RegraDesconto) e não de implementações concretas.
 
 Padrão de Projeto Utilizado Strategy (Comportamental): Utilizado para alternar dinamicamente o algoritmo de cálculo de desconto (Fixo ou Percentual) baseado no tipo de cupom fornecido em tempo de execução.
+
+## 4. Modelagem da Solução (Diagrama de Classes)
+
+```mermaid
+classDiagram
+    class RegraDesconto {
+        <<interface>>
+        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    }
+    class DescontoFixo {
+        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    }
+    class DescontoPercentual {
+        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    }
+    class CalculadoraDesconto {
+        -RegraDesconto regraDesconto
+        +CalculadoraDesconto(regraDesconto: RegraDesconto)
+        +aplicar(valorTotal: double, fatorDesconto: double) double
+    }
+
+    RegraDesconto <|.. DescontoFixo : Implementa
+    RegraDesconto <|.. DescontoPercentual : Implementa
+    CalculadoraDesconto --> RegraDesconto : Depende de (DIP)
