@@ -74,7 +74,7 @@ Ao executar o comando `mvn test`, a aplicação valida os seguintes cenários de
 2. **Cenário 2 (`deveGarantirQueDescontoFixoNaoDeixeValorNegativo`):** Regra de segurança que garante que se um cupom de R$ 50,00 for aplicado em uma compra de R$ 10,00, o sistema barra valores negativos e fixa o total do carrinho em R$ 0,00.
 3. **Cenário 3 (`deveAplicarDescontoPercentualCorretamente`):** Valida a estratégia de porcentagem (ex: 10%), aplicando-a sobre uma compra de R$ 200,00 e garantindo o retorno correto de R$ 180,00.
 
-### Log de Execução Sucesso (Saída do Console):
+### Log de saida do console:
 
 ```text
 [INFO] --- surefire:3.1.2:test (default-test) @ engenharia-software-ecommerce ---
