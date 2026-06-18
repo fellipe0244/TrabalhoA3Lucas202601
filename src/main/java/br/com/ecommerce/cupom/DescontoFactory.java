@@ -10,3 +10,4 @@ public static RegraDesconto criarRegra(TipoDesconto tipo) {
         };
     }
 }
+

@@ -16,7 +16,7 @@ public class CalculadoraDesconto {
             return 0;
         }
 
-        // Executa a estratégia injetada
+        
         double valorFinal = regraDesconto.calcularDesconto(valorTotal, fatorDesconto);
         
         System.out.printf("[INFO] [CalculadoraDesconto] Estratégia '%s' aplicada com sucesso.\n", regraDesconto.getClass().getSimpleName());
@@ -32,3 +32,5 @@ public class CalculadoraDesconto {
     }
 
 }
+
+//executa regra injetada 

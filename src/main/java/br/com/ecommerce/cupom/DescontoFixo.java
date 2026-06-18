@@ -7,3 +7,5 @@ public class DescontoFixo implements RegraDesconto {
         return Math.max(0, valorTotal - fatorDesconto);
     }
 }
+
+//aplica desconto valor bruto 

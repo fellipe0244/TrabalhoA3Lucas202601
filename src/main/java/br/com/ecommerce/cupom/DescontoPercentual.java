@@ -10,3 +10,5 @@ public class DescontoPercentual implements RegraDesconto {
         return valorTotal - (valorTotal * (fatorDesconto / 100.0));
     }
 }
+
+//aqui sai o desconto em porcentagem <> n deixa passar disso
