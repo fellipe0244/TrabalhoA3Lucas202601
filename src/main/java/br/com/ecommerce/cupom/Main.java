@@ -6,9 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=======================================================");
-        System.out.println("   SIMULADOR DE CHECKOUT INTERATIVO - CUPONS           ");
-        System.out.println("=======================================================\n");
+        System.out.println("   SIMULADOR DE CHECKOUT INTERATIVO - CUPONS      ");
 
         // 1. Entrada do Produto
         System.out.print("Digite o nome do produto: ");
@@ -32,9 +30,7 @@ public class Main {
         System.out.print("Digite o valor do cupom (Ex: 15 para 15% ou 15 Reais): ");
         double fatorDesconto = scanner.nextDouble();
 
-        System.out.println("\n=======================================================");
-        System.out.println("               PROCESSANDO SIMULAÇÃO                   ");
-        System.out.println("=======================================================");
+        System.out.println("  PROCESSANDO SIMULAÇÃO  ");
 
         // 4. Execução do Motor de Regras (Strategy + Factory)
         RegraDesconto regra = DescontoFactory.criarRegra(tipoSelected);
@@ -43,7 +39,7 @@ public class Main {
         // Aplica e mostra os logs detalhados que criamos
         calculadora.aplicarNoProduto(produto, fatorDesconto);
 
-        System.out.println("=======================================================");
+        System.out.println(" OBRIGADO ");
         scanner.close();
     }
 }

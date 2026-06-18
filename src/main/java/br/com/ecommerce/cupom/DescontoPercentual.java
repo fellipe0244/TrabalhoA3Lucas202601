@@ -1,5 +1,6 @@
 package br.com.ecommerce.cupom;
 
+
 public class DescontoPercentual implements RegraDesconto {
     @Override
     public double calcularDesconto(double valorTotal, double fatorDesconto) {

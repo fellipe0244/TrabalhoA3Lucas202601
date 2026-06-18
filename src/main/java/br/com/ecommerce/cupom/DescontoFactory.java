@@ -1,5 +1,6 @@
 package br.com.ecommerce.cupom;
 
+
 public class DescontoFactory {
 public static RegraDesconto criarRegra(TipoDesconto tipo) {
         return switch (tipo) {

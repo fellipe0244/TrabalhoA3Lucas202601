@@ -1,9 +1,5 @@
 package br.com.ecommerce.cupom;
 
-/**
- * Classe de contexto que utiliza o Padrão de Projeto Strategy.
- * Aplica SRP (Single Responsibility Principle).
- */
 public class CalculadoraDesconto {
     private final RegraDesconto regraDesconto;
 

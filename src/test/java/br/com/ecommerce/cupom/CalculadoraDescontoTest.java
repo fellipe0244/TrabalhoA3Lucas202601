@@ -3,6 +3,7 @@ package br.com.ecommerce.cupom;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class CalculadoraDescontoTest {
 
     // --- TESTES ATUAIS (MANTIDOS) ---
