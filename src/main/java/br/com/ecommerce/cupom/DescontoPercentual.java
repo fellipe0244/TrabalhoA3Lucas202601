@@ -1,4 +1,4 @@
-
+package br.com.ecommerce.cupom;
 
 public class DescontoPercentual implements RegraDesconto {
     @Override
