@@ -8,13 +8,24 @@ Foi desenvolvido uma interface desktop intuitiva para facilitar a operação do 
 <img width="886" height="519" alt="image" src="https://github.com/user-attachments/assets/02e3a8a9-352e-42fa-859c-273c73a06ed8" />
 
 Gerenciador de Catálogo: Adicione, visualize e remova produtos do catálogo de forma simples e rápida.
+
 <img width="296" height="369" alt="image" src="https://github.com/user-attachments/assets/c9cadfef-4cfb-43c7-a307-b25f4ccae3b0" />
+
+
 <img width="509" height="230" alt="image" src="https://github.com/user-attachments/assets/0fbf1eb3-6c2d-4ba6-8b71-360521c1c35d" />
+
+
 <img width="516" height="244" alt="image" src="https://github.com/user-attachments/assets/a9edbc0c-808d-40b3-897f-32d085a76308" />
 
 Simulador de Descontos e Pagamentos: Interface integrada que permite calcular descontos e aplicar formas de pagamento (PIX, Débito, Dinheiro e Crédito) com cálculo automático de juros.
+
+
 <img width="404" height="100" alt="image" src="https://github.com/user-attachments/assets/06aa78e9-9e29-4b7c-8b35-1ad0b6014e82" />
+
+
 <img width="402" height="148" alt="image" src="https://github.com/user-attachments/assets/bc76cc38-7fc5-41d9-a2e0-7d8893f21ff7" />
+
+
 <img width="343" height="151" alt="image" src="https://github.com/user-attachments/assets/fe645565-495c-4ac4-bad2-2ead6d937274" />
 
 
