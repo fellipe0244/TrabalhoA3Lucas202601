@@ -65,38 +65,29 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 ```mermaid
 
 classDiagram
-    class RegraDesconto {
+    class FormaPagamento {
         <<interface>>
-        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+        +aplicarPagamento(valor: double) double
     }
-    class DescontoFixo {
-        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    class PagamentoCredito {
+        +aplicarPagamento(valor: double) double
     }
-    class DescontoPercentual {
-        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    class PagamentoPadrao {
+        +aplicarPagamento(valor: double) double
     }
-    class CalculadoraDesconto {
-        -RegraDesconto regraDesconto
-        +CalculadoraDesconto(regraDesconto: RegraDesconto)
-        +aplicar(valorTotal: double, fatorDesconto: double) double
-        +aplicarNoProduto(produto: Produto, fatorDesconto: double) double
+    class PagamentoFactory {
+        +criarPagamento(metodo: String, parcelas: int) FormaPagamento
     }
-    class Produto {
-        -String nome
-        -double preco
-        +Produto(nome: String, preco: double)
-        +getNome() String
-        +getPreco() double
-    }
-    class DescontoFactory {
-        +criarRegra(tipo: TipoDesconto) RegraDesconto
+    class GerenciadorProdutos {
+        +salvarProdutos(lista: List~Produto~)
+        +carregarProdutos() List~Produto~
     }
 
-    RegraDesconto <|.. DescontoFixo : Implementa
-    RegraDesconto <|.. DescontoPercentual : Implementa
-    CalculadoraDesconto --> RegraDesconto : Depende de (DIP)
-    CalculadoraDesconto ..> Produto : Utiliza
-    DescontoFactory ..> RegraDesconto : Fabrica
+    FormaPagamento <|.. PagamentoCredito : Implementa
+    FormaPagamento <|.. PagamentoPadrao : Implementa
+    PagamentoFactory ..> FormaPagamento : Fabrica
+    JanelaPrincipal --> GerenciadorProdutos : Utiliza
+    JanelaPrincipal --> PagamentoFactory : Utiliza
 
 ```
 ## Demonstração de Funcionamento (Logs da Aplicação)
