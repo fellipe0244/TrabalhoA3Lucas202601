@@ -66,7 +66,13 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
 **3 ## Como utilizar a interface grafica: (CLI):**
 * **Após compilar o projeto, abra a classe JanelaPrincipal**, e clique diretamente em run Java, ou Debug Java para abrir a Janela de interação. 
+* **OBS: Se caso aparecer na parte superior em azul - Project: engenharia-software-ecommerce, é so clicar em cima para iniciar a aplicação.**
+
+<img width="886" height="103" alt="image" src="https://github.com/user-attachments/assets/278e2458-4b1d-49eb-8655-9bbaa424ba1e" />
+
+  
 Os logs após as alterações são escritos no terminal de forma automatica.
+O arquivo Json também é criado de forma automatica. 
     
 
 **3 Executar testes automatizados**
