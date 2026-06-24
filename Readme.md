@@ -5,7 +5,9 @@
 
 ## 🖥️ Interface Gráfica (Swing)
 Foi desenvolvido uma interface desktop intuitiva para facilitar a operação do sistema:
-<img width="886" height="519" alt="image" src="https://github.com/user-attachments/assets/02e3a8a9-352e-42fa-859c-273c73a06ed8" />
+
+<img width="626" height="367" alt="image" src="https://github.com/user-attachments/assets/0243759e-522d-4e96-9a40-fac7c6b95077" />
+
 
 Gerenciador de Catálogo: Adicione, visualize e remova produtos do catálogo de forma simples e rápida.
 
