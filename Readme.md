@@ -68,68 +68,48 @@ classDiagram
     %% Estrutura de Descontos (Strategy)
     class RegraDesconto {
         <<interface>>
-        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+        +calcularDesconto(valorTotal: double, fatorDesconto: double): double
     }
     class DescontoFixo {
-        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+        +calcularDesconto(valorTotal: double, fatorDesconto: double): double
     }
     class DescontoPercentual {
-        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+        +calcularDesconto(valorTotal: double, fatorDesconto: double): double
+    }
+    class DescontoFactory {
+        <<static>>
+        +criarRegra(tipo: TipoDesconto): RegraDesconto
+    }
+    class CalculadoraDesconto {
+        -regraDesconto: RegraDesconto
+        +aplicar(valorTotal: double, fatorDesconto: double): double
+        +aplicarNoProduto(produto: Produto, fatorDesconto: double): double
     }
 
     %% Estrutura de Pagamentos (Strategy)
     class FormaPagamento {
         <<interface>>
-        +aplicarPagamento(valorComDesconto: double) double
-    }
-    class PagamentoCredito {
-        -int parcelas
-        -double JUROS
-        +aplicarPagamento(valor: double) double
+        +aplicarPagamento(valorComDesconto: double): double
     }
     class PagamentoPadrao {
-        +aplicarPagamento(valor: double) double
+        +aplicarPagamento(valorComDesconto: double): double
     }
-
-    %% Fábricas e Gerenciadores
-    class DescontoFactory {
-        +criarRegra(tipo: TipoDesconto) RegraDesconto
+    class PagamentoCredito {
+        -parcelas: int
+        -JUROS: double
+        +aplicarPagamento(valorComDesconto: double): double
     }
     class PagamentoFactory {
-        +criarPagamento(tipo: String, parcelas: int) FormaPagamento
-    }
-    class GerenciadorProdutos {
-        -String ARQUIVO
-        +salvarProdutos(produtos: List~Produto~)
-        +carregarProdutos() List~Produto~
+        <<static>>
+        +criarPagamento(tipo: String, parcelas: int): FormaPagamento
     }
 
-    %% Interface e Entidades
-    class JanelaPrincipal {
-        -GerenciadorProdutos gerenciador
-        -calcular()
-        -salvarNovoProduto()
-        -removerProduto()
-    }
-    class Produto {
-        -String nome
-        -double preco
-        +equals(Object o) boolean
-    }
-
-    %% Relacionamentos
-    RegraDesconto <|.. DescontoFixo : Implementa
-    RegraDesconto <|.. DescontoPercentual : Implementa
-    FormaPagamento <|.. PagamentoCredito : Implementa
-    FormaPagamento <|.. PagamentoPadrao : Implementa
-    
-    DescontoFactory ..> RegraDesconto : Cria
-    PagamentoFactory ..> FormaPagamento : Cria
-    
-    JanelaPrincipal --> GerenciadorProdutos : Utiliza
-    JanelaPrincipal --> Produto : Manipula
-    JanelaPrincipal --> DescontoFactory : Usa
-    JanelaPrincipal --> PagamentoFactory : Usa
+    %% Relações
+    RegraDesconto <|.. DescontoFixo
+    RegraDesconto <|.. DescontoPercentual
+    FormaPagamento <|.. PagamentoPadrao
+    FormaPagamento <|.. PagamentoCredito
+    CalculadoraDesconto --> RegraDesconto
 
 ```
 ## Demonstração de Funcionamento (Logs da Aplicação)
