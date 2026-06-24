@@ -31,11 +31,17 @@ Simulador de Descontos e Pagamentos: Interface integrada que permite calcular de
 
 ## 💾 Persistência de Dados
 Catálogo Persistente: Agora, todos os produtos são salvos em um arquivo produtos.json. Isso garante que suas informações não sejam perdidas ao encerrar o sistema.
+
+
 <img width="430" height="209" alt="image" src="https://github.com/user-attachments/assets/0443e72d-73f4-4bb4-9b98-89f46300e562" />
+
 
 ## 💳 Motor de Pagamento (Padrões de Projeto)
 Strategy: Implementamos estratégias de pagamento isoladas, permitindo o cálculo de juros (crédito) ou pagamentos à vista de forma desacoplada.
+
+
 <img width="396" height="288" alt="image" src="https://github.com/user-attachments/assets/2efdd49c-8a00-4323-83fc-4746e2547b83" />
+
 
 Factory: Centralizamos a criação das regras de desconto e métodos de pagamento, facilitando a expansão do sistema para futuras formas de pagamento (ex: boletos, carteiras digitais).
 
