@@ -7,43 +7,44 @@
 Foi desenvolvido uma interface desktop intuitiva para facilitar a operação do sistema:
 
 <img width="626" height="367" alt="image" src="https://github.com/user-attachments/assets/0243759e-522d-4e96-9a40-fac7c6b95077" />
-
+<br>
 
 Gerenciador de Catálogo: Adicione, visualize e remova produtos do catálogo de forma simples e rápida.
 
 <img width="296" height="369" alt="image" src="https://github.com/user-attachments/assets/c9cadfef-4cfb-43c7-a307-b25f4ccae3b0" />
-
+<br>
 
 <img width="509" height="230" alt="image" src="https://github.com/user-attachments/assets/0fbf1eb3-6c2d-4ba6-8b71-360521c1c35d" />
-
+<br>
 
 <img width="516" height="244" alt="image" src="https://github.com/user-attachments/assets/a9edbc0c-808d-40b3-897f-32d085a76308" />
+<br>
 
 Simulador de Descontos e Pagamentos: Interface integrada que permite calcular descontos e aplicar formas de pagamento (PIX, Débito, Dinheiro e Crédito) com cálculo automático de juros.
 
 
 <img width="404" height="100" alt="image" src="https://github.com/user-attachments/assets/06aa78e9-9e29-4b7c-8b35-1ad0b6014e82" />
-
+<br>
 
 <img width="402" height="148" alt="image" src="https://github.com/user-attachments/assets/bc76cc38-7fc5-41d9-a2e0-7d8893f21ff7" />
-
+<br>
 
 <img width="343" height="151" alt="image" src="https://github.com/user-attachments/assets/fe645565-495c-4ac4-bad2-2ead6d937274" />
-
+<br>
 
 ## 💾 Persistência de Dados
 Catálogo Persistente: Agora, todos os produtos são salvos em um arquivo produtos.json. Isso garante que suas informações não sejam perdidas ao encerrar o sistema.
 
 
 <img width="430" height="209" alt="image" src="https://github.com/user-attachments/assets/0443e72d-73f4-4bb4-9b98-89f46300e562" />
-
+<br>
 
 ## 💳 Motor de Pagamento (Padrões de Projeto)
 Strategy: Implementamos estratégias de pagamento isoladas, permitindo o cálculo de juros (crédito) ou pagamentos à vista de forma desacoplada.
 
 
 <img width="396" height="288" alt="image" src="https://github.com/user-attachments/assets/2efdd49c-8a00-4323-83fc-4746e2547b83" />
-
+<br>
 
 Factory: Centralizamos a criação das regras de desconto e métodos de pagamento, facilitando a expansão do sistema para futuras formas de pagamento (ex: boletos, carteiras digitais).
 
@@ -71,7 +72,7 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 * **OBS: Se caso aparecer na parte superior em azul - Project: engenharia-software-ecommerce, é so clicar em cima para iniciar a aplicação.**
 
 <img width="886" height="103" alt="image" src="https://github.com/user-attachments/assets/278e2458-4b1d-49eb-8655-9bbaa424ba1e" />
-
+<br>
   
 Os logs após as alterações são escritos no terminal de forma automatica.
 O arquivo Json também é criado de forma automatica. 
