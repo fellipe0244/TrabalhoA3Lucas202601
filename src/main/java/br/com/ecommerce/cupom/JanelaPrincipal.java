@@ -44,7 +44,7 @@ public class JanelaPrincipal extends JFrame {
         painelCalculo.setBorder(BorderFactory.createTitledBorder("Cálculo"));
         painelCalculo.add(new JLabel("Nome:")); painelCalculo.add(txtNome);
         painelCalculo.add(new JLabel("Preço:")); painelCalculo.add(txtPreco);
-        painelCalculo.add(new JLabel("Tipo:")); painelCalculo.add(comboTipo);
+        painelCalculo.add(new JLabel("Tipo de Desconto:")); painelCalculo.add(comboTipo);
         painelCalculo.add(new JLabel("Pagamento:")); painelCalculo.add(comboPagamento);
         painelCalculo.add(new JLabel("Desconto:")); painelCalculo.add(txtFator);
         painelCalculo.add(btnCalcular); painelCalculo.add(lblResultado);
