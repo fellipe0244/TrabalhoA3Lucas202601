@@ -11,3 +11,4 @@ public static RegraDesconto criarRegra(TipoDesconto tipo) {
     }
 }
 
+// classe que decide a regra de desconto com base no que é solicitado

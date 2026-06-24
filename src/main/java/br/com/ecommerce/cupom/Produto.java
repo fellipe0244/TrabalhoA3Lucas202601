@@ -28,7 +28,14 @@ public class Produto {
     }
 
     @Override
+    public int hashCode() {
+        return nome.hashCode();
+    }
+
+    @Override
     public String toString() {
         return nome + " - R$ " + String.format("%.2f", preco);
     }
 }
+
+//implementacao de get e set para modificar dados no json

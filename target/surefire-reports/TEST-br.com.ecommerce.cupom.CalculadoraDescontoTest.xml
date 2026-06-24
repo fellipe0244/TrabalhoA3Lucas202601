@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.109" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.447" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\test-classes;C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\classes;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Fellipe\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\test-classes;C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\classes;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Fellipe\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Fellipe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Fellipe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Fellipe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\tmp\variavel JAVA\jdk-23.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Fellipe\AppData\Local\Temp\surefire5459687923499850218\surefirebooter-20260618205812809_3.jar C:\Users\Fellipe\AppData\Local\Temp\surefire5459687923499850218 2026-06-18T20-58-12_479-jvmRun1 surefire-20260618205812809_1tmp surefire_0-20260618205812809_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Fellipe\AppData\Local\Temp\surefire2144979590941050821\surefirebooter-20260624151914173_3.jar C:\Users\Fellipe\AppData\Local\Temp\surefire2144979590941050821 2026-06-24T15-19-14_024-jvmRun1 surefire-20260624151914173_1tmp surefire_0-20260624151914173_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\test-classes;C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\classes;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Fellipe\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\test-classes;C:\Users\Fellipe\Desktop\unibhlucas\A3\TrabalhoA3Lucas202601\target\classes;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Fellipe\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Fellipe\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Fellipe\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Fellipe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Fellipe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Fellipe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Fellipe"/>
     <property name="user.language" value="pt"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Fellipe\AppData\Local\Temp\surefire5459687923499850218\surefirebooter-20260618205812809_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Fellipe\AppData\Local\Temp\surefire2144979590941050821\surefirebooter-20260624151914173_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -50,7 +50,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\tmp\variavel JAVA\jdk-23.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\gs\gs10.06.0\bin;C:\Program Files\WireGuard\;C:\Program Files\Git\cmd;C:\Users\Fellipe\.local\bin;C:\Users\Fellipe\AppData\Local\Microsoft\WindowsApps;C:\Users\Fellipe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fellipe\AppData\Local\Python\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\apache-maven-3.9.14\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\php\php-8.5.6-Win32-vs17-x64;C:\tmp\variavel JAVA\jdk-23.0.2;C:\Users\Fellipe\.local\bin;C:\Users\Fellipe\AppData\Local\Microsoft\WindowsApps;C:\Users\Fellipe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fellipe\AppData\Local\Python\bin;C:\Users\Fellipe\AppData\Roaming\npm;C:\php\php-8.5.6-Win32-vs17-x64;C:\Users\Fellipe\AppData\Local\PowerToys\DSCModules\;c:\Users\Fellipe\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.library.path" value="C:\tmp\variavel JAVA\jdk-23.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\gs\gs10.06.0\bin;C:\Program Files\WireGuard\;C:\Program Files\Git\cmd;C:\Users\Fellipe\.local\bin;C:\Users\Fellipe\AppData\Local\Microsoft\WindowsApps;C:\Users\Fellipe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fellipe\AppData\Local\Python\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\apache-maven-3.9.14\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\php\php-8.5.6-Win32-vs17-x64;C:\tmp\variavel JAVA\jdk-23.0.2;C:\Program Files\dotnet\;C:\Users\Fellipe\.local\bin;C:\Users\Fellipe\AppData\Local\Microsoft\WindowsApps;C:\Users\Fellipe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fellipe\AppData\Local\Python\bin;C:\Users\Fellipe\AppData\Roaming\npm;C:\php\php-8.5.6-Win32-vs17-x64;C:\Users\Fellipe\AppData\Local\PowerToys\DSCModules\;C:\Users\Fellipe\.dotnet\tools;c:\Users\Fellipe\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -58,21 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="deveAplicarDescontoPercentualEmUmProdutoEspecifico" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.049">
+  <testcase name="deveAplicarDescontoFixoEmUmProdutoEspecifico" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.05">
     <system-out><![CDATA[
-===  Cenário 5: Cupom Percentual em Produto Real ===
-[INFO] [CalculadoraDesconto] Processing cupom para o produto: 'Headphone Sony WH-1000XM5'
-[INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
-[INFO] [CalculadoraDesconto] Valor original do carrinho: R$ 2000,00
-[INFO] [CalculadoraDesconto] Estratégia 'DescontoPercentual' aplicada com sucesso.
-[INFO] [CalculadoraDesconto] Valor final com desconto: R$ 1600,00
-[INFO] [CalculadoraDesconto] Processo finalizado.
-
-]]></system-out>
-  </testcase>
-  <testcase name="deveAplicarDescontoFixoEmUmProdutoEspecifico" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.015">
-    <system-out><![CDATA[
-=== Cenário 4: Cupom Fixo em Produto Real ===
+=== Cenário 1: Cupom Fixo em Produto Real ===
 [INFO] [CalculadoraDesconto] Processing cupom para o produto: 'iPhone 15 Pro Max'
 [INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
 [INFO] [CalculadoraDesconto] Valor original do carrinho: R$ 7500,00
@@ -82,8 +70,10 @@
 
 ]]></system-out>
   </testcase>
-  <testcase name="deveAplicarDescontoFixoCorretamente" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.003">
-    <system-out><![CDATA[[INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
+  <testcase name="deveAplicarDescontoFixoCorretamente" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.004">
+    <system-out><![CDATA[
+=== Cenário 2: Desconto Fixo Simples ===
+[INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
 [INFO] [CalculadoraDesconto] Valor original do carrinho: R$ 100,00
 [INFO] [CalculadoraDesconto] Estratégia 'DescontoFixo' aplicada com sucesso.
 [INFO] [CalculadoraDesconto] Valor final com desconto: R$ 80,00
@@ -91,17 +81,27 @@
 
 ]]></system-out>
   </testcase>
-  <testcase name="deveGarantirQueDescontoFixoNaoDeixeValorNegativo" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.008">
-    <system-out><![CDATA[[INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
-[INFO] [CalculadoraDesconto] Valor original do carrinho: R$ 10,00
-[INFO] [CalculadoraDesconto] Estratégia 'DescontoFixo' aplicada com sucesso.
-[INFO] [CalculadoraDesconto] Valor final com desconto: R$ 0,00
-[INFO] [CalculadoraDesconto] Processo finalizado.
-
+  <testcase name="deveSalvarERemoverProdutoDoCatalogo" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.35">
+    <system-out><![CDATA[
+=== Cenário 3: Persistência no Catálogo (JSON) ===
+[LOG] Carregando catálogo do JSON...
+[LOG] Salvando catálogo... Total de itens: 1
+[LOG] Carregando catálogo do JSON...
+[LOG] Salvando catálogo... Total de itens: 0
+[LOG] Carregando catálogo do JSON...
+[LOG] Teste de persistência finalizado com sucesso.
 ]]></system-out>
   </testcase>
-  <testcase name="deveAplicarDescontoPercentualCorretamente" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.004">
-    <system-out><![CDATA[[INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
+  <testcase name="deveCalcularJurosDeCreditoCorretamente" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.006">
+    <system-out><![CDATA[
+=== Cenário 4: Cálculo de Juros no Crédito ===
+[LOG] Valor final com 6% de juros: R$ 106.0
+]]></system-out>
+  </testcase>
+  <testcase name="deveAplicarDescontoPercentualCorretamente" classname="br.com.ecommerce.cupom.CalculadoraDescontoTest" time="0.003">
+    <system-out><![CDATA[
+=== Cenário 5: Desconto Percentual Simples ===
+[INFO] [CalculadoraDesconto] Iniciando processo de validação de cupom.
 [INFO] [CalculadoraDesconto] Valor original do carrinho: R$ 200,00
 [INFO] [CalculadoraDesconto] Estratégia 'DescontoPercentual' aplicada com sucesso.
 [INFO] [CalculadoraDesconto] Valor final com desconto: R$ 180,00

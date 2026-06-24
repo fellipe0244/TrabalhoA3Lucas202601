@@ -21,7 +21,7 @@ public class CalculadoraDesconto {
         
         System.out.printf("[INFO] [CalculadoraDesconto] Estratégia '%s' aplicada com sucesso.\n", regraDesconto.getClass().getSimpleName());
         System.out.printf("[INFO] [CalculadoraDesconto] Valor final com desconto: R$ %.2f\n", valorFinal);
-        System.out.println("[INFO] [CalculadoraDesconto] Processo finalizado.\n");
+        System.out.println("[INFO] [CalculadoraDesconto] Processo finalizado.\n"); //entrada de logs no console, porem sem interacao com usuario
         
         return valorFinal;
     }

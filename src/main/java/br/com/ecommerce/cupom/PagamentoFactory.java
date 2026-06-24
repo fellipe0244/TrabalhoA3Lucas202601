@@ -9,3 +9,5 @@ public class PagamentoFactory {
         };
     }
 }
+
+// classe que decide o pagamento com base no que é solicitado

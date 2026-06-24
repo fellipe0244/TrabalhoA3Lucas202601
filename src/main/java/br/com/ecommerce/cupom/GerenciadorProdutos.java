@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List; // IMPORTANTE: Adicione isso
+import java.util.List; 
 
 public class GerenciadorProdutos {
 
@@ -29,3 +29,4 @@ public class GerenciadorProdutos {
         
     }
 }
+//classe que modifica e consulta o json, onde é guardado os dados de itens criados e excluidos no catalogo

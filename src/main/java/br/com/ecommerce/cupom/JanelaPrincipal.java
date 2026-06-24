@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.List;
 
 public class JanelaPrincipal extends JFrame {
-    // Componentes de Cálculo
+    // componentes de calculo
     private JTextField txtNome = new JTextField(15);
     private JTextField txtPreco = new JTextField(10);
     private JTextField txtFator = new JTextField(10);
@@ -15,7 +15,7 @@ public class JanelaPrincipal extends JFrame {
     private JButton btnCalcular = new JButton("Calcular Desconto");
     private JLabel lblResultado = new JLabel("Resultado: R$ 0.00", SwingConstants.CENTER);
 
-    // Componentes de Catálogo
+    // componentes de catalogo
     private JTextField txtNovoNome = new JTextField(10);
     private JTextField txtNovoPreco = new JTextField(10);
     private JComboBox<Produto> comboCatalogo = new JComboBox<>();
@@ -29,7 +29,7 @@ public class JanelaPrincipal extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout(10, 10));
 
-        // Painel Esquerdo: Catálogo
+        // Painel Esquerdo visual catalogo
         JPanel painelCatalogo = new JPanel(new GridLayout(8, 1, 5, 5));
         painelCatalogo.setBorder(BorderFactory.createTitledBorder("Gerenciar Catálogo"));
         painelCatalogo.add(new JLabel("Novo Nome:")); painelCatalogo.add(txtNovoNome);
@@ -39,7 +39,7 @@ public class JanelaPrincipal extends JFrame {
         painelCatalogo.add(comboCatalogo);
         painelCatalogo.add(btnRemover);
 
-        // Painel Direito: Cálculo
+        // Painel Direito visual calculos
         JPanel painelCalculo = new JPanel(new GridLayout(7, 2, 5, 5));
         painelCalculo.setBorder(BorderFactory.createTitledBorder("Cálculo"));
         painelCalculo.add(new JLabel("Nome:")); painelCalculo.add(txtNome);
@@ -91,7 +91,7 @@ public class JanelaPrincipal extends JFrame {
             FormaPagamento forma = PagamentoFactory.criarPagamento(metodo, parcelas);
             double totalFinal = forma.aplicarPagamento(valorPosDesconto);
             
-            // Logs de monitoramento
+            // logs de saida 
             System.out.println("[LOG] Calculando: " + p.getNome() + " | Pagamento: " + metodo);
             System.out.println("[LOG] Total Final: R$ " + String.format("%.2f", totalFinal));
             
@@ -141,3 +141,4 @@ public class JanelaPrincipal extends JFrame {
         }
     }
 }
+// classe que cria e executa a interface interativa, chama os metodos e executa as funções

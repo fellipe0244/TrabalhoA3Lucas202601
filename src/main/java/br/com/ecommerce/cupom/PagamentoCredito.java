@@ -2,7 +2,7 @@ package br.com.ecommerce.cupom;
 
 public class PagamentoCredito implements FormaPagamento {
     private int parcelas;
-    private static final double JUROS = 0.02; // 2% ao mês
+    private static final double JUROS = 0.02; // foi escolhido 2% so para testes 
 
     public PagamentoCredito(int parcelas) {
         this.parcelas = parcelas;
@@ -10,7 +10,8 @@ public class PagamentoCredito implements FormaPagamento {
 
     @Override
     public double aplicarPagamento(double valor) {
-        // Cálculo simples de juros compostos ou simples (ex: juros simples)
+        // calculo simples de juros 
         return valor + (valor * (parcelas * JUROS));
     }
 }
+//classe implementada para calculos na forma de pagamento credito 
