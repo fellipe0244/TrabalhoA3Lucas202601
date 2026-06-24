@@ -65,29 +65,71 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 ```mermaid
 
 classDiagram
+    %% Estrutura de Descontos (Strategy)
+    class RegraDesconto {
+        <<interface>>
+        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    }
+    class DescontoFixo {
+        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    }
+    class DescontoPercentual {
+        +calcularDesconto(valorTotal: double, fatorDesconto: double) double
+    }
+
+    %% Estrutura de Pagamentos (Strategy)
     class FormaPagamento {
         <<interface>>
-        +aplicarPagamento(valor: double) double
+        +aplicarPagamento(valorComDesconto: double) double
     }
     class PagamentoCredito {
+        -int parcelas
+        -double JUROS
         +aplicarPagamento(valor: double) double
     }
     class PagamentoPadrao {
         +aplicarPagamento(valor: double) double
     }
+
+    %% Fábricas e Gerenciadores
+    class DescontoFactory {
+        +criarRegra(tipo: TipoDesconto) RegraDesconto
+    }
     class PagamentoFactory {
-        +criarPagamento(metodo: String, parcelas: int) FormaPagamento
+        +criarPagamento(tipo: String, parcelas: int) FormaPagamento
     }
     class GerenciadorProdutos {
-        +salvarProdutos(lista: List~Produto~)
+        -String ARQUIVO
+        +salvarProdutos(produtos: List~Produto~)
         +carregarProdutos() List~Produto~
     }
 
+    %% Interface e Entidades
+    class JanelaPrincipal {
+        -GerenciadorProdutos gerenciador
+        -calcular()
+        -salvarNovoProduto()
+        -removerProduto()
+    }
+    class Produto {
+        -String nome
+        -double preco
+        +equals(Object o) boolean
+    }
+
+    %% Relacionamentos
+    RegraDesconto <|.. DescontoFixo : Implementa
+    RegraDesconto <|.. DescontoPercentual : Implementa
     FormaPagamento <|.. PagamentoCredito : Implementa
     FormaPagamento <|.. PagamentoPadrao : Implementa
-    PagamentoFactory ..> FormaPagamento : Fabrica
+    
+    DescontoFactory ..> RegraDesconto : Cria
+    PagamentoFactory ..> FormaPagamento : Cria
+    
     JanelaPrincipal --> GerenciadorProdutos : Utiliza
-    JanelaPrincipal --> PagamentoFactory : Utiliza
+    JanelaPrincipal --> Produto : Manipula
+    JanelaPrincipal --> DescontoFactory : Usa
+    JanelaPrincipal --> PagamentoFactory : Usa
 
 ```
 ## Demonstração de Funcionamento (Logs da Aplicação)
